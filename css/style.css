@@ -75,6 +75,7 @@ a:hover {
 
 .btn:hover {
   background-position: 0 100%;
+  color: #f3f3f3;
 }
 
 /* Navigation */
