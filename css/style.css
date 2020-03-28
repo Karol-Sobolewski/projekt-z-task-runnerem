@@ -1,0 +1,58 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #121b22;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+
+a {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.row {
+  border: solid blue 2px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 36px 20px;
+  margin: 0 auto;
+}
+
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+}
+
+/* Navigation */
+.Navigation {
+  position: absolute;
+  max-width: 50%;
+}
+
+.col-navigation ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Splash */
+
+/*# sourceMappingURL=style.css.map */
