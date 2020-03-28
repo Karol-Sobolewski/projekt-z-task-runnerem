@@ -25,6 +25,29 @@ a {
   color: #f3f3f3;
 }
 
+.row {
+  margin: 48px 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 36px 20px;
+  margin: 0 auto;
+}
+
+.section-title {
+  position: relative;
+  margin: 0;
+  font-size: 36px;
+  line-height: 0.7;
+}
+
+.section-subtitle {
+  font-style: italic;
+  font-size: 12px;
+  color: #204254;
+}
+
 .btn {
   display: inline-block;
   transition: all 2s;
@@ -50,34 +73,14 @@ a {
   background-position: 0 100%;
 }
 
-.row {
-  border: solid green 2px;
-}
-
-.container {
-  max-width: 1140px;
-  padding: 36px 20px;
-  margin: 0 auto;
-}
-
-.section-title {
-  position: relative;
-  margin: 0;
-  font-size: 36px;
-  line-height: 0.7;
-}
-
-.section-subtitle {
-  font-style: italic;
-  font-size: 12px;
-  color: #204254;
-}
-
 /* Navigation */
 .navigation {
   position: absolute;
   width: 100%;
-  border: solid yellow 2px;
+}
+
+.row-navigation {
+  margin: 0;
 }
 
 .col-navigation ul {
@@ -136,13 +139,51 @@ a {
 
 /* Services */
 .services i {
-  height: 100px;
   width: 100px;
+  height: 100px;
   border: 2px solid #b94a3e;
   border-radius: 50%;
   font-size: 50px;
   line-height: 100px;
   text-align: center;
   color: #b94a3e;
+}
+
+/* Portfolio */
+.portfolio {
+  background: #f3f3f3;
+}
+
+.card {
+  position: relative;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+}
+
+.card-image img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+/* Media */
+@media (max-width: 767px) {
+  .row-portfolio {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
