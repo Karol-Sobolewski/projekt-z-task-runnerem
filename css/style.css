@@ -6,6 +6,7 @@
 
 body {
   margin: -25px 0 0 0;
+  line-height: 1.2;
   text-align: center;
   color: #121b22;
 }
@@ -61,8 +62,15 @@ a {
 
 .section-title {
   position: relative;
+  margin: 0;
   font-size: 36px;
-  margin: 0 0 60px 0;
+  line-height: 0.7;
+}
+
+.section-subtitle {
+  font-style: italic;
+  font-size: 12px;
+  color: #204254;
 }
 
 /* Navigation */
@@ -90,7 +98,8 @@ a {
   -ms-flex-align: center;
       align-items: center;
   margin: 0;
-  height: 100vh;
+  height: 105vh;
+  padding: 0 20px;
   background-image: url("../images/splash.jpg");
   background-position: center center;
   background-size: cover;
@@ -117,10 +126,23 @@ a {
 
 .splash-inner h2 {
   font-size: 60px;
+  text-transform: uppercase;
 }
 
 .btn-splash {
   background-image: linear-gradient(90deg, #b94a3e 30%, transparent 50%);
   background-size: 300% auto;
+}
+
+/* Services */
+.services i {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #b94a3e;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  color: #b94a3e;
 }
 /*# sourceMappingURL=style.css.map */
