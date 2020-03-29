@@ -14,7 +14,7 @@ $font-text: 'Lora', serif;
 }
 
 body {
-    margin: -25px 0 0 0;
+    margin: 0 auto;
 		line-height: 1.2;
     text-align: center;
     color: $color-dark;
@@ -94,15 +94,21 @@ a {
 
 .row-navigation {
 	margin: 0;
-	align-items: center;
+//	align-items: center;
+//	justify-content: center;
 }
 
-.col-navigation ul {
+.col-navigation ul ul {
   	padding: 0;
   	list-style-type: none;
   	display: flex;
   	justify-content: space-around;
 }
+
+.menu-btn {
+	display: none;
+}
+
 
 /* Splash */
 
@@ -113,7 +119,7 @@ a {
 	margin: 0;
   height: 105vh;
 	padding: 0 20px;
-  background-image: url(../images/splash.jpg);
+  background-image: url("../images/splash.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -235,10 +241,52 @@ a {
 }
 
 /* Media */
+
 @media (max-width: 767px) {
+
+.col-navigation {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	padding-right: 35px;
+	text-align: center;
+	.menu-btn {
+		display: block;
+		font-size: 24px;
+		text-align: right;
+
+	}
+}
+
+.col-navigation ul ul {
+		margin: 0;
+    display: none;
+    transform: translateX (-50%);
+    z-index: 1;
+		border: solid 1px $color-main;
+    }
+
+	.col-navigation ul ul li {
+	    display: block;
+	    margin: 12px;
+	    a {
+	        color: $color-light;
+	        display: block;
+	        padding: 0 24px;
+	        &:hover {
+	          color: $color-main;
+	        }
+	    }
+	}
+
+	.col-navigation li:hover ul {
+	    display: block;
+	}
+
 	.row-portfolio {
 		margin: 0;
 	}
+
 	.social-icons-footer a {
 		width: 60px;
 		height: 60px;
